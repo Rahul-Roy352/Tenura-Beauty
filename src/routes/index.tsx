@@ -21,9 +21,9 @@ const categories = [
 
 const products = [
   { name: "Rosy Rasna Tinted Lip Oil", price: 599, img: prod1 },
-  { name: "Sweet Escape Tinted Lip Oil", price: 699, img: prod2 },
+  { name: "Sweet Escape Tinted Lip Oil", price: 599, img: prod2 },
   { name: "Gola Gloss Lip Oil", price: 599, img: prod3 },
-  { name: "Bare Bliss Lip Oil", price: 699, img: prod4 },
+  { name: "Bare Bliss Lip Oil", price: 599, img: prod4 },
 ];
 
 function Index() {
@@ -31,7 +31,7 @@ function Index() {
     <>
       {/* HERO */}
       <section className="relative bg-ink text-cream overflow-hidden">
-        <div className="container-x grid md:grid-cols-2 items-center min-h-[78vh] gap-8 py-14">
+        <div className="container-x grid lg:grid-cols-[45%_55%] items-center min-h-[85vh] gap-4 py-8">
           <div className="relative z-10 max-w-xl">
             <p className="text-xs tracking-[0.4em] text-gold mb-6">NEW · WINTER EDIT</p>
             <h1 className="font-display text-5xl md:text-7xl leading-[1.05] text-cream">
@@ -53,16 +53,16 @@ function Index() {
               </Link>
             </div>
           </div>
-          <div className="relative h-[60vh] md:h-[78vh]">
-            <div className="absolute inset-0 md:-right-20">
+          <div className="relative h-[70vh] md:h-[85vh]">
+            <div className="absolute top-4 bottom-4 right-4 left-4">
               <img
                 src={heroImg}
-                alt="Tanéa Beauty model with bold red lips"
+                alt="Ténura Beauty model with bold red lips"
                 width={1536}
                 height={1024}
-                className="h-full w-full object-cover object-top"
+                className="h-full w-full object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-ink via-transparent to-transparent md:from-ink/60" />
+              <div className="absolute inset-0 bg-gradient-to-r from-ink/30 via-transparent to-transparent" />
             </div>
           </div>
         </div>
@@ -137,17 +137,17 @@ function Index() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {products.map((p) => (
               <div key={p.name} className="group flex flex-col">
-                <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-white">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-white min-h-[420px]">
                   <img
                     src={p.img}
                     alt={p.name}
                     width={768}
                     height={1024}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
                   <span className="absolute top-3 left-3 bg-ink text-cream text-[10px] tracking-[0.2em] uppercase px-2 py-1 rounded">
                     Bestseller
@@ -171,7 +171,7 @@ function Index() {
         <div className="aspect-[4/5] rounded-lg overflow-hidden bg-muted">
           <img
             src={catLipoils}
-            alt="Tanéa craftsmanship"
+            alt="Ténura craftsmanship"
             width={768}
             height={960}
             loading="lazy"
@@ -184,7 +184,7 @@ function Index() {
             Crafted with intention,<br />worn with confidence.
           </h2>
           <p className="mt-6 text-ink/70 text-lg leading-relaxed">
-            Every Tanéa formula is built on responsibly sourced ingredients, kind to your skin
+            Every Ténura formula is built on responsibly sourced ingredients, kind to your skin
             and the planet. From velvet lipsticks to nourishing oils — beauty that gives back.
           </p>
           <div className="mt-10 grid grid-cols-3 gap-6 text-sm">

@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/hot-seller")({
   head: () => ({
     meta: [
-      { title: "Hot Sellers — Tanéa Beauty" },
+      { title: "Hot Sellers — Ténura Beauty" },
       { name: "description", content: "Our most-loved beauty essentials." },
     ],
   }),

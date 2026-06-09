@@ -39,7 +39,7 @@
 :root {
   --radius: 0.5rem;
 
-  /* Tanéa palette */
+  /* Ténura palette */
   --cream: oklch(0.965 0.012 80);
   --ink: oklch(0.16 0.01 60);
   --rose: oklch(0.65 0.16 20);

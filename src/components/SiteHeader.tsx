@@ -32,7 +32,7 @@ export function SiteHeader() {
             ))}
           </nav>
           <Link to="/" className="font-display text-3xl tracking-wide">
-            Tanéa
+            Ténura
             <span className="block text-[0.55rem] tracking-[0.5em] text-center text-ink/60 -mt-1">
               BEAUTY
             </span>
